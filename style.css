@@ -1,0 +1,128 @@
+/* Global styles */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Form input fields */
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #0072ff;
+    font-size: 16px;
+    outline: none;
+}
+
+form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0072ff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* Registered users list */
+#userListContainer {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #0072ff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#userList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.user-item span {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.user-item .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.user-item .actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-item .editBtn {
+    background-color: #00c853;
+    color: #ffffff;
+}
+
+.user-item .editBtn:hover {
+    background-color: #009624;
+}
+
+.user-item .deleteBtn {
+    background-color: #d32f2f;
+    color: #ffffff;
+}
+
+.user-item .deleteBtn:hover {
+    background-color: #b71c1c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
